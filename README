@@ -1,0 +1,5 @@
+Soprano PHP framework
+
+June 2010
+
+A lite "Sinatra"-like framework running a Hangman game using Wordnik API to test a "stateful" application on a web where state is maintained automatically either in a database or in a session. A small part of my MSc Dissertation.

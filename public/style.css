@@ -1,0 +1,6 @@
+body{font:16px/1.5 "Trebuchet MS", "Geneva CE", lucida, sans-serif;background:url('background.jpg') repeat;}
+h1{font-size:28px;padding:0px;margin:0px;color:#204359;}
+h2{padding:0px;margin:0px;line-height:50px;font-size:20px;text-transform:lowercase;font-weight:normal;}
+h3{font-weight:bold;font-size:12px;line-height:24px;}
+a{text-decoration:none;color:inherit;text-transform:lowercase;letter-spacing:2px;}
+#wrapper{margin:0 auto; width:600px;background:url('page.png');padding:40px;padding-left:100px;margin-top:20px;}

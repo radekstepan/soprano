@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<title>Hangman</title>
+
+    <link href="<?php echo HTTP_DIR ?>/style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="wrapper">
+    <h1>Round #<?php echo $hangman->getRound(); ?></h1>
+
+    <h2>
+    <?php foreach ($hangman->getGuessed() as $letter): ?>
+        <?php echo end($letter); ?>
+    <?php endforeach; ?>
+    </h2>
+
+    <h3><?php echo $hangman->getDefinition(); ?></h3>
+
+    <h2>
+    <?php foreach ($hangman->getAvailable() as $letter): ?>
+        <a href="<?php echo HTTP_DIR . "/guess/{$letter}"; ?>">
+        <?php echo $letter; ?>
+        </a>
+    <?php endforeach; ?>
+    </h2>
+</div>
+</body>
+</html>
